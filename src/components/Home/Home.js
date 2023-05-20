@@ -7,7 +7,7 @@ import { BiCodeAlt } from "react-icons/bi"
 import { DiIllustrator } from "react-icons/di"
 import { SiAutodesk } from "react-icons/si"
 import Project from "../Assets/data"
-import { Swiper } from "swiper/react"
+// import { Swiper } from "swiper/react"
 import ProjectItem from "../ProjectItem/ProjectItem"
 import { Link } from "react-router-dom"
 
@@ -201,7 +201,7 @@ const HomeContainer = styled.div`
         transition: 0.5s ease color;
         text-decoration: none;
         &:hover{
-          color: crimson;
+          color: goldenrod;
           font-weight: 600;
         }
       }
@@ -472,7 +472,7 @@ function Home() {
               </div>
             </div>
             <div className="trademark">
-              <p>&copy; 2023 - Muhammed Musa | Galapagous Design</p>
+              <p>&copy; 2023 - Muhammed Musa</p>
             </div>
       </footer>
     </HomeContainer>

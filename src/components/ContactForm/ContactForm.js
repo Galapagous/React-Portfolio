@@ -45,16 +45,27 @@ const ContactForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    console.log({name: name, email: email, message: message})
+    setEmail("")
+    setName("")
+    setMessage("")
+  }
+
   return <ContactArea>
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className='form_group'>
         <label htmlFor='name'>
         Your Name
         </label>
           <input
             name='name'
+            type='text'
             id='name'
             value={name}
+            required
             onChange={(e)=>{setName(e.target.value)}}
           />
       </div>
@@ -64,8 +75,10 @@ const ContactForm = () => {
         </label>
           <input
             name='email'
+            type='email'
             id='email'
             value={email}
+            required
             onChange={(e)=>{setEmail(e.target.value)}}
           />
       </div>
@@ -77,6 +90,7 @@ const ContactForm = () => {
             name='message'
             id='message'
             value={message}
+            required
             onChange={(e)=>{setMessage(e.target.value)}}
           />
       </div>

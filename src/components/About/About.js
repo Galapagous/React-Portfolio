@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Musa from "../Assets/Musa5.png"
+import { Link } from "react-router-dom"
 
 const AboutContainer = styled.div`
 padding: 5rem 10rem;
@@ -24,18 +25,23 @@ padding: 5rem 10rem;
         padding: 20px 0px;
         line-height: 1.8rem;
       }
+      a{
+        text-decoration: none;
+        border: none;
+        &:hover{
+          color: goldenrod;
+        }
+      }
       button{
         padding: 10px;
-        background-color: grey;
         color: black;
-        border: none;
+        border: 1px solid goldenrod;
         border-radius: 5px;
         margin-top: 20px;
         font-weight: 600;
         cursor: pointer;
         &:hover{
-          color: white;
-          background-color: goldenrod;
+          border: 1px solid gray;
         }
       }
     }
@@ -111,10 +117,10 @@ function About() {
     <AboutContainer className="container">
       <div className="top">
       <div className="left">
-      <p>Hi My name is Muhammed Musa</p>
+      <p>Hi I'am Musa</p>
         <h3>A web Developer</h3>
         <p>Originally trained as a Mechanical Engineer, my insatiable appetite for math and logic constantly drives me to explore new horizons. I discovered coding, an area where I found solace and a profound sense of satisfaction. My passion for coding led me to seek out tasks that required its application, relishing the opportunity to tackle intricate problems with inventive solutions. Today, coding has become more than just a hobby; it has transformed into a full-time practice that I wholeheartedly embrace. My ultimate goal is to utilize my coding expertise to provide exceptional service, always striving to deliver the best solutions possible.</p>
-        <button type="file">Download File</button>
+        <button type="file"><Link to="https://docs.google.com/document/d/1PYC8oFJRyvnSxoYUCTByG1ixQO8xuTRwfgPisqPRatk/edit?usp=sharing">Resume</Link></button>
       </div>
       <div className="right">
         <img src={Musa} alt="musa"/>
