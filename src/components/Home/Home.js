@@ -274,27 +274,31 @@ const HomeContainer = styled.div`
       }
     }
     #about {
-      margin: 100px 0px;
+      /* margin: 20px 0px; */
       .about {
-        width: 80%;
+        width: 300px;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 10px;
         gap: 10px;
         .left-about {
-          font-size: 0.8rem;
           h1 {
-            font-size: 2rem;
+            font-size: 1rem;
             margin: 10px 0px;
+          }
+          span{
+            font-size: 0.7rem;
           }
           .cta {
             margin-top: 20px;
             display: flex;
-            button {
+            button,a {
               padding: 5px;
-              border-radius: 5px;
+              border-radius: 2px;
               font-weight: 400;
               display: block;
-              margin-bottom: 10px;
+              margin-bottom: 5px;
               &:nth-child(2){
                 padding: 0px;
               }
@@ -303,24 +307,28 @@ const HomeContainer = styled.div`
         }
         .right-about {
           img {
-            width: 100%;
-            height: 100%;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
           }
         }
       }
     }
     #service {
-      margin: 20px 0px;
-      margin-bottom: 20px;
+      margin: 1px 0px;
+      margin-bottom: 1px;
       --width: 30px;
-      --heading: 1.5rem;
-      --paragraph: 1rem;
+      --heading: 1rem;
+      --paragraph: 0.7rem;
       .service {
-        width: 80%;
+        width: 300px;
         gap: 20px;
         .service-title {
           h1 {
-            font-size: 2rem;
+            font-size: 1rem;
+          }
+          span{
+            font-size: 0.7rem;
           }
         }
         .service-element {
@@ -331,10 +339,22 @@ const HomeContainer = styled.div`
             height: var(--width);
           }
           h1 {
-            font-size: var(--heading);
+            font-size: 1rem;
           }
           p {
-            font-size: var(--paragraph);
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+    #projects{
+      .project{
+        .title{
+          h1{
+            font-size: 1rem;
+          }
+          span{
+            font-size: 0.7rem;
           }
         }
       }
@@ -347,15 +367,21 @@ const HomeContainer = styled.div`
 
       }
       h3{
-        font-size: 1.7rem;
+        font-size: 1rem;
       }
       a{
-        font-size: 1rem;
+        font-size: 0.7rem;
       }
       }
     }
     footer{
       .footer{
+        h1{
+          font-size: 1rem;
+        }
+        p,a{
+          font-size: 0.7rem;
+        }
         flex-direction: column;
         .info, .page_links, .contacts, 
         .social_links{

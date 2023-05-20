@@ -38,23 +38,24 @@ const ProjectContainer = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    margin-bottom: 10px;
     .image-container{
       display: flex;
       align-items: center;
       flex-direction: column;
       img{
-        width: 350px;
-        height: 300px;
+        width: 300px;
+        height: 200px;
         object-fit: cover;
       }
     }
     .info{
-      width: 350px;
+      width: 300px;
       h1{
         font-size: 1rem;
       }
-      p{
-        font-size: 0.8rem;
+      p,a{
+        font-size: 0.7rem;
       }
     }
   }
