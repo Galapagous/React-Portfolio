@@ -4,6 +4,7 @@ import Vita from "../Assets/vita.png"
 import Id from "../Assets/id.png"
 import Yelp from "../Assets/yelp_test1.JPG"
 import Poke from "../Assets/poke.JPG"
+import Insta from "../Assets/insta.JPG"
 
 const project = [
   {
@@ -47,6 +48,13 @@ const project = [
     desc: "An API consuming application",
     img: Poke,
     link: "https://musapokemon.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "Instagram clone",
+    desc: "A minimalize version of instagram",
+    img: Insta,
+    link: "https://classy-beijinho-4f97d5.netlify.app",
   },
 ]
 
