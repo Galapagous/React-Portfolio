@@ -35,8 +35,15 @@ const ContactArea = styled.div`
   @media only screen and (max-width: 768px) {
     .form_group{
       input, textarea{
-        width: 350px;
+        width: 200px;
+        font-size: 0.7rem;
       }
+      label{
+        font-size: 1rem;
+      }
+    }
+    button{
+      font-size: 1rem;
     }
   }
 `

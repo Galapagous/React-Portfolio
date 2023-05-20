@@ -31,9 +31,19 @@ const ContactCOntainer = styled.div`
   }
   @media only screen and (max-width: 768px) {
     padding: 2rem;
+    p{
+      font-size: 1rem;
+    }
+    h3{
+      font-size: 0.7rem;
+    }
     .contact__wrapper{
-      width: 100%;
+      width: 300px;
       flex-direction: column;
+      .left_wrapper{
+        gap: 5px;
+        align-items: center;
+      }
     }
   }
 `

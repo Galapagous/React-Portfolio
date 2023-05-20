@@ -59,7 +59,11 @@ const ProjectWrapper = styled.div`
   .project-container{
     .title_section{
       p{
-        min-width: 300px;
+        /* width: 300px; */
+        font-size: 0.7rem;
+      }
+      h3{
+        font-size: 1rem;
       }
     }
     .search{

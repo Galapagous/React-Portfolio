@@ -80,17 +80,29 @@ padding: 5rem 10rem;
     .top{
       flex-direction: column;
       gap: 10px;
+      .left{
+        width: 300px;
+        p{
+          font-size: 1rem;
+        }
+        h3,p{
+          font-size: 0.7rem;
+        }
+        a{
+          font-size: 0.7rem;
+        }
+      }
       .right{
         img{
-          width: 90%;
-          height: 500px;
+          width: 300px;
+          height: 200px;
           object-fit: cover;
         }
       }
     }
     .middle{
-      h3{
-        font-size: 1.5rem;
+      h3,h4{
+        font-size: 1rem;
       }
       .education, .skills, .experience{
         .items{
@@ -99,11 +111,11 @@ padding: 5rem 10rem;
             flex-direction: column;
             align-items: flex-start;
             h4{
-              font-size: 1.3rem;
+              font-size: 0.7rem;
               font-weight: 600;
             }
             p{
-              font-size: 1rem;
+              font-size: 0.7rem;
             }
           }
         }

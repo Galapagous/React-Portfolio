@@ -31,6 +31,9 @@ const ItemStyled = styled.div`
         padding: 0.2rem;
       }
     }
+    .text{
+      font-size: 1rem;
+    }
   }
 `
 const ContactInfo = ({

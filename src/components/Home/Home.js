@@ -357,6 +357,9 @@ const HomeContainer = styled.div`
             font-size: 0.7rem;
           }
         }
+        .project-item{
+          gap: 5px;
+        }
       }
     }
     #contact{

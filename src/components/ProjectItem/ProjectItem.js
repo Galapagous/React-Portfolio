@@ -38,7 +38,7 @@ const ProjectContainer = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     .image-container{
       display: flex;
       align-items: center;
