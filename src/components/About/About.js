@@ -47,6 +47,9 @@ padding: 5rem 10rem;
     }
     .right{
       flex: 1;
+      img{
+        width: 100%;
+      }
     }
   }
   .middle{
@@ -68,7 +71,11 @@ padding: 5rem 10rem;
           display: flex;
           align-items: center;
           gap: 20px;
+          p{
+            font-size: 1rem;
+          }
           h4{
+            font-size: 1.5rem;
             width: 15rem;
           }
         }
