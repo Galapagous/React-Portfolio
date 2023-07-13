@@ -51,7 +51,7 @@ function Contact() {
   return (
     <ContactCOntainer>
       <p>Get in touch</p>
-      <h3>Conatct</h3>
+      <h3>Contact</h3>
       <div className="contact__wrapper">
         <div className="left_wrapper">
           <ContactInfo icon={<MdLocalPhone/>} text="+2348123280394"/>
